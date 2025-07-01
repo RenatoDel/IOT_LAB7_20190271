@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lab06TransportePublicoApp</string>
+
+    <!-- Facebook -->
+    <string name="facebook_app_id">TU_FACEBOOK_APP_ID</string>
+    <string name="facebook_client_token">TU_FACEBOOK_CLIENT_TOKEN</string>
+
+    <!-- Google -->
+    <string name="default_web_client_id">1007152460848-kp3dattavd5v92pqdepq6350qa6s9e6d.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

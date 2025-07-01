@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1007152460848",
+    "project_id": "iot-lab07-20190271",
+    "storage_bucket": "iot-lab07-20190271.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007152460848:android:962b6e57309bb945ba69f5",
+        "android_client_info": {
+          "package_name": "com.example.iot_lab07_20190271"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKG_rhRYZBYceIVM4P1ldcCIPHtm-vBgQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

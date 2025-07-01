@@ -1,0 +1,64 @@
+plugins {
+    alias(libs.plugins.android.application)
+    id 'com.google.gms.google-services'      // ✅ Plugin de Google Services
+}
+
+android {
+    namespace 'com.example.iot_lab07_20190271'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.iot_lab07_20190271"
+        minSdk 31
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    // ===== FIREBASE DEPENDENCIES =====
+    // Usar Firebase BOM para manejar versiones automáticamente
+    implementation platform('com.google.firebase:firebase-bom:33.15.0')
+
+    // Firebase Authentication (sin versión por el BOM)
+    implementation 'com.google.firebase:firebase-auth'
+
+    // Firestore Database (sin versión por el BOM)
+    implementation 'com.google.firebase:firebase-firestore'
+
+    // Firebase Analytics (opcional)
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // Google Sign-In
+    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+
+    // Facebook Login
+    implementation 'com.facebook.android:facebook-login:16.2.0'
+
+    // Para mostrar imágenes
+    implementation 'com.google.firebase:firebase-storage:20.3.0'
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+}
