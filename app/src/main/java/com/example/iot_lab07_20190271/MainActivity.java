@@ -15,6 +15,7 @@ import com.example.iot_lab07_20190271.fragments.Linea1Fragment;
 import com.example.iot_lab07_20190271.fragments.LimaPassFragment;
 import com.example.iot_lab07_20190271.fragments.ProfileFragment;
 import com.example.iot_lab07_20190271.fragments.SummaryFragment;
+import com.example.iot_lab07_20190271.services.CloudStorage;
 import com.example.iot_lab07_20190271.services.FirebaseManager;
 import com.example.iot_lab07_20190271.services.SocialAuthService;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Inicializar Firebase
         FirebaseManager.initialize();
+        CloudStorage.initialize();
 
         // Verificar si usuario está logueado
         if (!FirebaseManager.isUserLoggedIn()) {
